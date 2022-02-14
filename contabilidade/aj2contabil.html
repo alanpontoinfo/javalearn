@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>aj2contabil</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- swiper css link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css-dev/style-dev.css" />
+  </head>
+  
+    <!-- inicio do cabecalho-->
+    <header class="cabecalho">
+      <a href="#" class="logo">
+       <!-- <i class="fas fa-lightbulb">contabilidade</i>-->
+        <img src="./imagens/cont-logo.jpg" style="border-radius:50%;">
+      </a>
+      <nav class="navbar">
+        <div id="fecha-navbar" class="fas fa-times"></div>
+        <a href="#home">home</a>
+        <a href="#sobre">sobre</a>
+        <a href="#servicos">serviços</a>
+        <a href="#contato">contato</a>
+      </nav>
+      <div class="icons">
+        <div id="btn-conta" ></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+    </header>
+    <!-- fim do cabecalho-->
+    <!-- conta form section starts  -->
+
+    <div class="conta-form">
+      <div id="fecha-form" class="fas fa-times"></div>
+
+      <div class="buttons">
+        <span class="btn active login-btn">login</span>
+        <span class="btn registro-btn">registre</span>
+      </div>
+
+      <form class="login-form active" action="">
+        <h3>login agora</h3>
+        <input type="email" placeholder="digite seu email" class="box" />
+        <input type="password" placeholder="digite sua senha" class="box" />
+        <div class="flex">
+          <input type="checkbox" name="" id="lembre-me" />
+          <label for="remember-me"> lembre-me</label>
+          <a href="#">esqueceu a senha?</a>
+        </div>
+        <input type="submit" value="login agora" class="btn" />
+      </form>
+
+      <form class="registro-form" action="">
+        <h3>registre agora</h3>
+        <input type="email" placeholder="digite seu email" class="box" />
+        <input type="password" placeholder="digite senha" class="box" />
+        <input type="password" placeholder="confirme sua senha" class="box" />
+        <input type="submit" value="registre agora" class="btn" />
+      </form>
+    </div>
+    <!--fim da secao conta-->
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <section
+            class="swiper-slide slide"
+            style="background: url(imagens/cont-7.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>abra sua empresa e tenha uma contabilidade completa</h3>
+            <!--  <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas impedit labore dolore unde, quidem corrupti?
+              </p>
+              
+              <a href="#" class="btn">get started</a>-->
+               <a href='https://wa.me/557192498696' class="btn">Iniciar conversa<img src="./imagens/whats.png"/></a>
+   
+            </div>
+          </section>
+
+          <section
+            class="swiper-slide slide"
+            style="background: url(imagens/cont-3.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>soluções de contabilidade para sua empresa</h3>
+           <!--   <p>
+                Nossa Contabilidade cabe em seu Bolso
+              </p>
+              <a href="#" class="btn">get started</a>-->
+              <a href='https://wa.me/557192498696' class="btn">Iniciar conversa<img src="./imagens/whats.png"/></a>
+            </div>
+          </section>
+
+          <section
+            class="swiper-slide slide"
+            style="background: url(imagens/cont-4.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>a contabilidade que sua empresa necessita</h3>
+             <!-- <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas impedit labore dolore unde, quidem corrupti?
+              </p>
+              <a href="#" class="btn">get started</a>-->
+              <a href='https://wa.me/557192498696' class="btn">Iniciar conversa<img src="./imagens/whats.png"/></a>
+            </div>
+          </section>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!--section class="heading-link">
+      <h3>sobre</h3>
+       <p><a href="home.html">home</a> / about</p>
+    </section>-->
+
+    <!-- home section ends -->
+    <section class="sobre" id="sobre">
+      <div class="imagem">
+        <img src="imagens/sobre1.svg" alt="" />
+      </div>
+
+      <div class="content">
+         <h1 class="titulo-sobre">sobre nós</h1>
+       <article id="conteudo">
+         <p>
+          Oferecemos inovação na prestação de serviços contábeis aos clientes
+          com presteza, qualidade e excelência nas áreas de assessoria contábil,
+          trabalhista, planejamento tributário, regularização de empresas e
+          consultoria empresarial.
+        </p>
+
+        <p>
+          Temos a Missão de prestar serviços contábeis com qualidade, excelência
+          e comprometimento diferenciado, valorizando e priorizando a satisfação
+          dos nossos clientes, tornando-se símbolo de ética e eficiência na
+          assessoria contábil em todo o lugar.
+        </p>
+
+        <p>
+          Temos a Visão de ser referência em prestação de serviços contábeis,
+          buscando investir continuamente em inovação tecnológica, para melhor
+          assessorar nossos clientes.
+        </p>
+ </article>
+        <button id="show-more">Leia mais</button>
+        
+        <div class="icons-container">
+          <!--  <div class="icons">
+            <img src="images/about-icon-1.png" alt="">
+            <h3>350+</h3>
+            <span>courses</span>
+         </div>-->
+
+          <div class="icons">
+            <img src="imagens/icone-sobre-1.png" alt="" />
+            <h3>100+</h3>
+            <span>clientes</span>
+          </div>
+          <div class="icons">
+            <img src="imagens/icone-sobre-2.png" alt="" />
+            <h3>10+</h3>
+            <span>premios</span>
+          </div>
+           <div class="icons">
+            <img src="imagens/conexao.png" alt="" />
+            <h3>10+</h3>
+            <span>parceiros</span>
+          </div>
+        </div>
+       
+    </div>
+      </div>
+    </section>
+
+    <!-- about section ends 
+
+    <section class="servicos">
+      <h1 class="heading">nossos serviços</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="imagens/serv-1.png" alt="" />
+          <h3>graphic design</h3>
+          <p>12 modules</p>
+        </div>
+
+        <div class="box">
+          <img src="imagens/serv-2.png" alt="" />
+          <h3>mathemetics</h3>
+          <p>12 modules</p>
+        </div>
+
+        <div class="box">
+          <img src="imagens/serv-3.png" alt="" />
+          <h3>imposto de renda</h3>
+          <p>
+            Orientação e Elaboração da Declaração do Imposto de Renda Pessoa
+            Física e Jurídica. </p>
+            <p>Análise, orientação e controle da aplicação dos
+            dispositivos legais vigentes.</p>
+            <p> Calculo do I.R.R.F, Elaboração da
+            DIRF.</p>
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="imagens/serv-4.png" alt="" />
+          <h3>development</h3>
+          <p>12 modules</p>
+        </div>
+
+        <div class="box">
+         <img src="images/subject-icon-5.png" alt="">
+         <h3>science</h3>
+         <p>12 modules</p>
+      </div>
+
+      <div class="box">
+         <img src="images/subject-icon-6.png" alt="">
+         <h3>engineering</h3>
+         <p>12 modules</p>
+      </div>
+      </div>
+    </section>
+
+    fim do servico-->
+
+    <!-- home courses slider section starts  -->
+    <section class="heading-link">
+      <h3>nossos serviços</h3>
+      <!-- <p><a href="home.html">home</a> / about</p>-->
+    </section>
+    <section class="servicos" id="servicos">
+      <div class="swiper servicos-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="imagens/serv-1.png" alt="" />
+              <h3>gestão de pessoas</h3>
+            </div>
+            <div class="content">
+              <!-- <button class="show-more" class="btn">Mostrar mais</button>-->
+
+              <p>
+                <button
+                  onclick="document.getElementById('conteudo-gp').style.display='block'"
+                  class="btn"
+                >
+                  Gestão de Pessoas
+                </button>
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="imagens/serv-2.png" alt="" />
+
+              <h3>planejamento contábil</h3>
+            </div>
+            <div class="content">
+              <button
+                onclick="document.getElementById('conteudo-pc').style.display='block'"
+                class="btn"
+              >
+                planejamento contabil
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="imagens/serv-3.png" alt="" />
+              <h3>imposto de renda</h3>
+            </div>
+            <div class="content">
+              <button
+                onclick="document.getElementById('conteudo-ir').style.display='block'"
+                class="btn"
+              >
+                Imposto de Renda
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="imagens/serv-4.png" alt="" />
+              <h3>gestão fiscal - trbutária</h3>
+            </div>
+            <div class="content">
+              <button
+                onclick="document.getElementById('conteudo-gft').style.display='block'"
+                class="btn"
+              >
+                Gestão Fiscal - tributária
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="imagens/migrar-cont.png" alt="" />
+              <h3>Quero migrar contabilidade</h3>
+            </div>
+            <div class="content">
+              <button
+                onclick="document.getElementById('contato-mgr').style.display='block'"
+                class="btn"
+              >
+                Migrar Contabilidade
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="imagens/abrir-empresa.png" alt="" />
+              <h3>quero abrir minha empresa</h3>
+            </div>
+            <div class="content">
+              <button
+                onclick="document.getElementById('contato-emp').style.display='block'"
+                class="btn"
+              >
+                Abrir minha empresa
+              </button>
+            </div>
+          </div>
+
+          <!-- <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/course-1-5.png" alt="">
+               <h3>web development</h3>
+            </div>
+            <div class="content">
+               <h3>web development</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/course-1-6.png" alt="">
+               <h3>web development</h3>
+            </div>
+            <div class="content">
+               <h3>web development</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>-->
+        </div>
+      </div>
+    </section>
+    <!-- inicio modal-->
+    <div id="conteudo-gp" class="al-modal">
+      <div class="conteudo-modal al-animate-zoom">
+        <div class="al-container al-black al-display-container">
+          <span
+            onclick="document.getElementById('conteudo-gp').style.display='none'"
+            class="btn al-display-topright al-large"
+            >x</span
+          >
+          <h3>gestão de pessoas</h3>
+        </div>
+        <div class="al-container">
+          <p>
+            Cuidaremos dos cálculos e emissões de folha de pagamento, 13º
+            salário, férias, admissão/demissão, entre outros serviços.
+            TRABALHISTA E PREVIDENCIÁRIA Controle e Execução de Rotinas
+            Trabalhistas; Execução da Admissão e Demissão de Empregados; Emissão
+            de Envelopes de Pagamento de Salários; Controle de Emissão de
+            Recibos de "Pro-labore"; Emissão de Folha de Pagamento de Salários;
+            Emissão das Guias de Recolhimento das Contribuições sobre a Folha;
+            Emissão de Relatórios Complementares (RAIS, GFIP, CAGED); Controle
+            de Contrato de Experiência; Controle do Período Aquisitivo de
+            Férias; Acompanhamento nas Alterações Legais; Apuração de impostos:
+            IRRF, INSS, FGTS/SEFIP, contribuições sindical, assistencial e
+            confederativa; Acompanhamento das convenções, acordos e dissídios
+            coletivos de trabalho de diversas categorias; Orientação sobre
+            benefícios obrigatórios e facultativos
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="conteudo-pc" class="al-modal">
+      <div class="conteudo-modal al-animate-zoom">
+        <div class="al-container al-black al-display-container">
+          <span
+            onclick="document.getElementById('conteudo-pc').style.display='none'"
+            class="btn al-display-topright al-large"
+            >x</span
+          >
+          <h3>planejamento contabil</h3>
+        </div>
+        <div id="conteudo-pc">
+         
+          <p>
+            A sua empresa terá uma contabilidade completa, onde cuidaremos de
+            todas as obrigações perante o governo.Planejamento Contábil;
+            Elaboração de Plano de Contas; Escrituração contábil física e
+            digital (SPED); Apresentação de relatórios oficiais de acordo com as
+            Normas Brasileiras de Contabilidade; Análise de Balanços; Perícias
+            Contábeis; Assessoria contábil as empresas optantes pelo Lucro Real,
+            Presumido, Simples Nacional, Imunes e Isentas; Apuração do resultado
+            anual ou trimestral.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="conteudo-ir" class="al-modal">
+      <div class="conteudo-modal al-animate-zoom">
+        <div class="al-container al-black al-display-container">
+          <span
+            onclick="document.getElementById('conteudo-ir').style.display='none'"
+            class="btn al-display-topright al-large"
+            >x</span
+          >
+          <h3>Imposto de Renda</h3>
+        </div>
+        <div id="conteudo-ir">
+          
+          <p>
+            Orientação e Elaboração da Declaração do Imposto de Renda Pessoa
+            Física e Jurídica.
+          </p>
+          <p>
+            Análise, orientação e controle da aplicação dos dispositivos legais
+            vigentes. Calculo do I.R.R.F, Elaboração da DIRF.
+          </p>
+
+          <!--- <button onclick="leiaMais()" id="btnLeiaMais" class="btnLeiaMais">Leia Mais</button>
+              <a href="#" class="btn">read more</a>-->
+        </div>
+      </div>
+    </div>
+    <div id="conteudo-gft" class="al-modal">
+      <div class="conteudo-modal al-animate-zoom">
+        <div class="al-container al-black al-display-container">
+          <span
+            onclick="document.getElementById('conteudo-gft').style.display='none'"
+            class="btn al-display-topright al-large"
+            >x</span
+          >
+          <h3>Gestão Fiscal - Tributária</h3>
+        </div>
+        <div id="conteudo-gft">
+         
+          <p>
+            Depto fiscal e tributário DEPTO FISCAL E TRIBUTÁRIO Gestão fiscal,
+            planejamento tributário e assessoria constante para te ajudar na
+            vida financeira da sua empresa. FISCAL Escrituração de Notas Fiscais
+            de entrada, saídas e serviços; Conferência da Emissão das Notas
+            Fiscais; Emissão dos Livros Fiscais; Escrituração dos Estoques;
+            Apuração dos Tributos a Recolher; Emissão das Guias de Recolhimento
+            (DIRF, DCTF, DIPI, DIPJ, GIA Mod. "A", etc.); Demonstrativo de
+            débitos estaduais e federais; Acompanhamento de fiscalização
+            federal, estadual e municipal; Orientação sobre substituição
+            tributária; Documentos Fiscais.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--modal contato-->
+     <!-- Contact Modal migrar -->
+    <div id="contato-mgr" class="al-modal">
+      <div class="conteudo-modal al-animate-zoom">
+        <div class="al-container al-black">
+          <span
+            onclick="document.getElementById('contato-mgr').style.display='none'"
+            class="btn al-display-topright al-large"
+            >x</span
+          >
+          <h1>Migrar Contabilidade</h1>
+        </div>
+        <div class="al-container">
+          <p>
+            Preencha os Campos:
+          </p>
+          <form action="/action_page.php" target="_blank">
+            <p>
+              <input
+                class="al-input al-padding-16 al-border"
+                type="text"
+                placeholder="Razão Social"
+                required
+                name="razao-social"
+              />
+            </p>
+            <p>
+              <input
+                class="al-input al-padding-16 al-border"
+                type="text"
+                placeholder="CNPJ"
+                required
+                name="cnpj"
+              /></p>
+              <input
+                class="al-input al-padding-16 al-border"
+                type="text"
+                placeholder="Telefone"
+                required
+                name="telefone"
+              />
+            </p>
+            <input
+                class="al-input al-padding-16 al-border"
+                type="email"
+                placeholder="Email"
+                required
+                name="email"
+              />
+            <p>
+              <input
+                class="al-input al-padding-16 al-border"
+                type="number"
+                placeholder="Número de Sócios Incluindo você"
+                required
+                name="socios"
+                
+              />
+            </p>
+            <input
+                class="al-input al-padding-16 al-border"
+                type="number"
+                placeholder="Número de funcionários"
+                required
+                name="funcionarios"
+                
+              />
+            </p>
+            <select class="al-select al-border al-padding-16" required name="option">
+  <option value="" disabled selected>Escolha o tipo de Empresa</option>
+  <option value="1">Prestação de Serviços</option>
+  <option value="2">Comercio</option>
+  <option value="3">Industria</option>
+</select>
+            <p>
+              <input
+                class="al-input al-padding-16 al-border"
+                type="text"
+                placeholder="Mensagem \ "
+                required
+                name="mensagem"
+              />
+            </p>
+            <p><button class="btn" type="submit">ENVIAR</button></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+<!--fim do modal migrar-->
+<!-- inicio modal abrir empresa-->
+
+    <div id="contato-emp" class="al-modal">
+      <div class="conteudo-modal al-animate-zoom">
+        <div class="al-container al-black">
+          <span
+            onclick="document.getElementById('contato-emp').style.display='none'"
+            class="btn al-display-topright al-large"
+            >x</span
+          >
+          <h1>Abrir Empresa</h1>
+        </div>
+        <div class="al-container">
+          <p>
+          Preencha os Campos:
+          </p>
+          <form action="/action_page.php" target="_blank">
+            <p>
+              <input
+                class="al-input al-padding-16 al-border"
+                type="text"
+                placeholder="Nome Completo"
+                required
+                name="nome"
+              />
+            </p>
+           <p>
+              <input
+                class="al-input al-padding-16 al-border"
+                type="text"
+                placeholder="Telefone"
+                required
+                name="telefone"
+              />
+            </p>
+            <p>
+            <input
+                class="al-input al-padding-16 al-border"
+                type="email"
+                placeholder="Email"
+                required
+                name="email"
+              />
+              </p>
+            <p>
+              <input
+                class="al-input al-padding-16 al-border"
+                type="text"
+                placeholder="Estado/UF"
+                required
+                name="estado"
+                
+              />
+            </p>
+            <input
+                class="al-input al-padding-16 al-border"
+                type="text"
+                placeholder="Cidade"
+                required
+                name="cidade"
+                
+              />
+            </p>
+            <select class="al-select al-border al-padding-16" required name="option">
+  <option value="" disabled selected>Escolha o segmento da Empresa</option>
+  <option value="1">Prestação de Serviços</option>
+  <option value="2">Comercio</option>
+  <option value="3">Industria</option>
+</select>
+            <p>
+              <input
+                class="al-input al-padding-16 al-border"
+                type="text"
+                placeholder="Mensagem \ "
+                required
+                name="mensagem"
+              />
+            </p>
+            <p><button class="btn" type="submit">ENVIAR</button></p>
+          </form>
+        </div>
+      </div>
+    </div><!-- fim modal abrir empresa-->
+    <!--fim modal contato-->
+    <!--fim do modal-->
+    <!-- home courses slider section ends -->
+
+
+<section class="heading-link">
+   <h3>Nosso Contato</h3>
+  
+</section>
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contato">
+
+ 
+
+
+   <div class="row">
+
+      <div class="image">
+         <img src="imagens/mens-con.svg" alt="">
+      </div>
+
+      <form action="">
+         <h3>Envie uma Mensagem</h3>
+         <input type="text" placeholder="nome" class="box">
+         <input type="email" placeholder="email" class="box">
+         <input type="number" placeholder="phone" class="box">
+         <textarea name="" class="box" placeholder="mensagem" id="" cols="30" rows="10"></textarea>
+         <input type="submit" value="enviar mensagem" class="btn">
+      </form>
+
+   </div>
+   
+   <div class="icons-container">
+
+      <div class="icons">
+         <i class="fas fa-clock"></i>
+         <h3>aberto das :</h3>
+         <p>08:00am até 18:00pm</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-phone"></i>
+         <h3>telefone :</h3>
+         <p>71-99249-8696</p>
+        
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-envelope"></i>
+         <h3> email : </h3>
+         <p>aj2contabil.anderson@gmail.com</p>
+        
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-map"></i>
+         <h3>endereço :</h3>
+         <p>salvador, bahia - 400104</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3> <i class="fas fa-lightbulb"></i> contabilidade </h3>
+         <p>Conheça nossas redes socias e compartilhe..</p>
+         <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+         </div>
+      </div>
+       <div class="box">
+         <h3>links rápido</h3>
+         <a href="#home" class="link">home</a>
+         <a href="#sobre"
+         class="link">sobre</a>
+         <a href="#servicos" class="link">sevicos</a>
+         <a href="#contato" class="link">contato</a>
+      </div>
+
+      
+
+
+      <div class="box">
+         <h3>Beneficios </h3>
+<div class="lista">
+
+<li>Serviços pertinentes ao departamento pessoal de sua empresa</li>
+
+<li>Assessoria e Consultoria em diversas áreas</li>
+<li>Relatórios mensais da gestão contábil</li>
+<li>Realização de diversos cálculos contábeis para sua empresa</li>
+   
+ </div>
+ </div>
+ 
+      <div class="box">
+        <h3>nossa contabilidade</h3>
+       
+<div class="lista">
+  
+<li>Declaração de Imposto de Renda</li>
+<li>Softwares de troca de documentos entre contador x cliente</li>
+<li>Diversos canais de atendimento para suporte ao cliente</li>
+<li>Gestão completa dos serviços contábeis para sua empresa</li>    
+ </div>
+ </div>
+
+<!--
+      <div class="box">
+         <h3>newsletter</h3>
+         <p>subscribe for latest upadates</p>
+         <form action="">
+            <input type="email" name="" placeholder="enter your email" id="" class="email">
+            <input type="submit" value="subscribe" class="btn">
+         </form>
+      </div>-->
+
+   </div>
+
+   <div class="credit"> desenvolvido por <span>alan Santos</span> | todo direito reservado </div>
+
+</section>
+
+<!-- footer section ends -->
+    <!-- swiper js link  -->
+
+    <script
+      src="https://unpkg.com/swiper@7/swiper-bundle.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script src="js-dev/script-dev.js" type="text/javascript"></script>
+  </body>
+</html>
