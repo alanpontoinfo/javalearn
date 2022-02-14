@@ -550,8 +550,8 @@ button:hover {
   padding: 0;
   outline: 0;
   width: 800px;
-  font-size: medium;
-  line-height: 2.5rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
 }
 .al-select {
   padding: 9px 0;
@@ -561,8 +561,8 @@ button:hover {
 }
 
 .al-container {
-  padding: 0.5em 20px;
-  margin-top: 16px;
+  padding: 1.5rem 10px;
+  margin-top: 50px;
   margin-bottom: 16px;
 }
 
@@ -620,7 +620,7 @@ button:hover {
 }
 
 .contact .icons-container .icons p {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 2;
   color: rgb(15, 12, 12);
 }
@@ -707,7 +707,7 @@ button:hover {
   gap: 2rem;
 }
 .footer .box-container .box h3 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-transform: capitalize;
   color: #444;
   padding: 1rem 0;
@@ -722,10 +722,10 @@ button:hover {
 }
 
 .footer .box-container .box .share a {
-  height: 4.5rem;
-  width: 4.5rem;
-  line-height: 4.5rem;
-  font-size: 1.7rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  font-size: 1.5rem;
   background-color: #033a37;
   color: #fff;
   margin-right: 0.3rem;
@@ -736,7 +736,7 @@ button:hover {
   font-size: 2rem;
   line-height: 2;
   color: #777;
-  padding: 1.8rem 1rem;
+  padding: 1.5rem 0;
   display: block;
 }
 .footer .box-container .box .share a:hover {
@@ -797,7 +797,7 @@ button:hover {
 .al-display-topright {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -10px;
 }
 
 .al-large {
@@ -815,10 +815,7 @@ button:hover {
   padding-top: 16px !important;
   padding-bottom: 16px !important;
 }
-.w3-padding-24 {
-  padding-top: 24px !important;
-  padding-bottom: 24px !important;
-}
+
 .al-border {
   border: 1px solid #ccc !important;
 }
@@ -843,7 +840,7 @@ button:hover {
     padding: 3rem 2rem;
   }
   .conteudo-modal {
-    width: 900px;
+    width: 700px;
   }
 }
 
@@ -888,7 +885,7 @@ button:hover {
     width: 500px;
   }
   .al-modal {
-    padding-top: 50px;
+    padding-top: 150px;
   }
 }
 
@@ -898,7 +895,7 @@ button:hover {
     width: auto !important;
   }
   .al-modal {
-    padding-top: 30px;
+    padding-top: 100px;
   }
 }
 @media (max-width: 450px) {
@@ -910,5 +907,8 @@ button:hover {
   }
   .sobre .content .titulo-sobre {
     font-size: 4rem;
+  }
+  .conteudo-modal {
+    width: 500px;
   }
 }
